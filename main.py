@@ -160,7 +160,7 @@ async def websocket_endpoint(websocket: WebSocket):
             await websocket.close()
 
 def process_google_search(search_term: str):
-    api_key = "a3bad1034138465646b2cd3e574858084f8e907b6d2623e1a7d6f8c011fc7048"
+    api_key = ""
     url = f"https://serpapi.com/search.json?q={search_term}&api_key={api_key}"
     response = requests.get(url)
     if response.status_code != 200:
